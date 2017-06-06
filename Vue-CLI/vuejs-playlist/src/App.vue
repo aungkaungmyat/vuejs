@@ -1,28 +1,39 @@
 <template>
-  <div id="app">
-    <!-- <img src="./assets/logo.png"> -->
+  <!-- <div id="app">
+    <img src="./assets/logo.png">
     <hello></hello>
+  </div> -->
+  <div>
+    <h1>{{title}}</h1>
+    <ninjas></ninjas>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+// import Hello from './components/Hello'
+import Ninjas from './Ninjas.vue'
 
 export default {
-  name: 'app',
+  // name: 'app',
+  // components: {
+  //   Hello
+  // }
   components: {
-    Hello
+    'ninjas': Ninjas
+  },
+  data(){
+    return{
+      title: 'Ninja App'
+    }
+  },
+  methods:{
+
   }
 }
 </script>
 
-<style>
-/*#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}*/
+<style scoped>
+h1{
+    color: purple;
+}
 </style>
