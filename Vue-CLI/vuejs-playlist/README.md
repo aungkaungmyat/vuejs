@@ -1,6 +1,6 @@
 # vuejs-playlist
 
-> A Vue.js playlist
+> A Vue.js project
 
 ## Build Setup
 
