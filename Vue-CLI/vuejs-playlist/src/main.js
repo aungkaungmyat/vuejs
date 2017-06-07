@@ -1,5 +1,8 @@
 import Vue from 'vue'
 import App from './App'
+import VueResource from 'vue-resource'
+
+Vue.use(VueResource);
 // import Ninjas from './Ninjas.vue'
 //
 export const bus  =  new Vue();
