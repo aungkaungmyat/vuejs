@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App'
 // import Ninjas from './Ninjas.vue'
 //
+export const bus  =  new Vue();
 // Vue.component('ninjas', Ninjas);
 Vue.config.productionTip = false
 
